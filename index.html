@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisor.io</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <img src="./images/logo.png" alt="" class="logo" /> -->
+      <h1>Revisor</h1>
+    </header>
+    <main>
+      <section class="inputs">
+        <h2>Add the chapters to task list</h2>
+        <form action="">
+          <div class="form-group">
+            <label for="chapter-name">Chapter name</label>
+            <input
+              type="text"
+              placeholder="Enter the chapter name"
+              name="chapter-name"
+              id="chapter-name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="completion-time">Completion time</label>
+            <input
+              type="number"
+              placeholder="Enter the estimated time of completion"
+              name="completion-time"
+              id="completion-time"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject Name: </label>
+            <select name="subject" id="subject" required>
+              <option value="" selected>--Select--</option>
+              <option value="physics">Physics</option>
+              <option value="chemistry">Chemistry</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="english">English</option>
+              <option value="computer-science">Computer Science</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Add chapter</button>
+          </div>
+        </form>
+      </section>
+      <section class="completed">
+        <h2>Completed chapters</h2>
+        <div class="chapter heading">
+          <p>Chapter Name</p>
+          <p>Revision date</p>
+        </div>
+        <div class="chapter">
+          <p>Hydrocarbons(2)</p>
+          <p>16/02/2023</p>
+        </div>
+        <div class="chapter">
+          <p>Electrostatics(3)</p>
+          <p>16/02/2023</p>
+        </div>
+        <div class="chapter">
+          <p>Chemical Kinetics(4)</p>
+          <p>12/02/2023</p>
+        </div>
+        <div class="chapter">
+          <p>Ray optics(6)</p>
+          <p>02/03/2023</p>
+        </div>
+      </section>
+      <section class="tasks" id="tasks">
+        <h2>Task List(chapters to complete)</h2>
+      </section>
+    </main>
+    <footer>
+      Copyright &copy;<a href="https://adnanalisde.github.io/adnan-ali"
+        >Adnan Ali
+      </a>
+      2023-24
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
