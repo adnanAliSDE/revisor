@@ -1,3 +1,3 @@
 # Casing used in css
 
-hyphen-casing
+This project helps students to track the revision of their syllabus
